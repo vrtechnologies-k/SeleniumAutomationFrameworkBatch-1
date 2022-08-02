@@ -38,26 +38,12 @@ public class PlaceOrderTest extends BaseClass {
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		// Scope of implicitly wait is global
-		//wait until object not displayed, if object is displayed before the defined time, it will skip the remainig the time
-		// resume the execution
-
-		// Difference b/w Implicitly and explicitly wait
-		// scope of implicitly wait is global
-		// scope of explicitly wait is targeted to specific webelement
-		// In implicitly wait object is displayed before the defined time, webdriver will skip the remaining time and resume the execution
-		// In explicitly wait object is displayed before the defined time, webdriver will wait until specified time and then move to the next statement
-		// for list of web element scope of implicitly wait is limted
-
-		//driver.findElement(By.className("search-keyword")).sendKeys("ber");
-
+		
 		ProductsPage product = PageFactory.initElements(driver, ProductsPage.class); 
 		
 		product.searchItem();
-		
-		List<WebElement> products = driver.findElements(By.xpath("//div[@class='product']"));
 
-		int prodcucount = products.size();
+		int prodcucount = product.products.size();
 
 		System.out.println(prodcucount);
 
@@ -65,13 +51,11 @@ public class PlaceOrderTest extends BaseClass {
 
 		ArrayList<String> array2 = new ArrayList<String>();
 
-		List<WebElement> productbtns = driver.findElements(By.xpath("//div[@class='product']/div/button"));
+		for (int i = 0; i<product.productbtns.size(); i++) {
 
-		for (int i = 0; i<productbtns.size(); i++) {
+			product.productbtns.get(i).click();
 
-			productbtns.get(i).click();
-
-			String veggies = productbtns.get(i).findElement(By.xpath("parent::div/parent::div/h4")).getText();
+			String veggies = product.productbtns.get(i).findElement(By.xpath(product.productName)).getText();
 
 			array1.add(veggies);
 
@@ -79,17 +63,15 @@ public class PlaceOrderTest extends BaseClass {
 
 		System.out.println(array1);
 
-		driver.findElement(By.className("cart-icon")).click();
+		product.getcart();
 
-		driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
-
+		product.getCheckout();
+		
 		Thread.sleep(2000);
 
-		List<WebElement> productnames = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
+		for (int j =0 ; j<product.productnames.size(); j++) {
 
-		for (int j =0 ; j<productnames.size(); j++) {
-
-			String vegnames = productnames.get(j).getText();
+			String vegnames = product.productnames.get(j).getText();
 
 			array2.add(vegnames);
 
@@ -105,22 +87,18 @@ public class PlaceOrderTest extends BaseClass {
 			System.out.println("Page 1 products not matching with page 2");
 		}
 
-		List<WebElement> eachproductprices = driver.findElements(By.xpath("//table/tbody/tr/td[5]/p"));
-
 		int sum = 0;
 
-		for (int k = 0; k<eachproductprices.size(); k++) {
+		for (int k = 0; k<product.productprice.size(); k++) {
 
-			String price = eachproductprices.get(k).getText();
-
-			//System.out.println(price);
+			String price = product.productprice.get(k).getText();
 
 			sum = sum + Integer.parseInt(price);  // 48+160+180
 		}
 
 		System.out.println(sum);
-
-		String totalamount = driver.findElement(By.className("totAmt")).getText();
+		
+		String totalamount = product.totalAmount.getText();
 
 		if (sum == Integer.parseInt(totalamount)) {
 
@@ -129,36 +107,20 @@ public class PlaceOrderTest extends BaseClass {
 
 			System.out.println("Total amount not matches with sum of prodcuts amount");
 		}
+		
+		product.getPromocode();
+		product.getPromobutton();
+		
+		waituntilelementvisible(driver, product.promoInfo1);
 
-		driver.findElement(By.className("promoCode")).sendKeys("rahulshettyacademy");
-
-		driver.findElement(By.className("promoBtn")).click();
-
-		//Thread.sleep(5000);
-
-		// Explicitly Wait:
-		// Webdriver will wait until lobject not displayed and if object is not displayed with in the defiened
-		// time, getting exception like element not found, visible etc.. and if object is available with in time it will not 
-		// through any exception and if object displayed before the time, it will not skip remaining time and wait untill defined time completed
-		// Scope of explicitly wait is targeted to the specific web element
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("promoInfo")));
-
-		//WebElement promomsg =driver.findElement(By.className("promoInfo"));
-
-		//WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.className("promoInfo")));
-
-		String promoinfo = driver.findElement(By.className("promoInfo")).getText();
+		String promoinfo = product.promoInfo.getText();
 
 		System.out.println(promoinfo);
 
 		//WebDriverWait wait = new WebDriverWait(driver,10);
 
 
-		String disamount = driver.findElement(By.className("discountAmt")).getText();
+		String disamount = product.discountAmount.getText();
 
 		Double d = Double.parseDouble(disamount);
 
@@ -170,13 +132,13 @@ public class PlaceOrderTest extends BaseClass {
 			System.out.println("Sum of total price is less than or equal to discount");
 		}
 
-		driver.findElement(By.xpath("//button[contains(.,'Place Order')]")).click();
+		product.placeOrder.click();
 
-		new Select(driver.findElement(By.tagName("select"))).selectByVisibleText("India");
+		selectbyvalue(product.selectcountry, "India");
 
-		driver.findElement(By.className("chkAgree")).click();
+		product.agreehk.click();
 
-		driver.findElement(By.xpath("//button[text()='Proceed']")).click();
+		product.proceed.click();
 
 		Thread.sleep(5000);
 

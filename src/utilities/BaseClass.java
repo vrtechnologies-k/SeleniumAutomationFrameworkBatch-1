@@ -24,10 +24,6 @@ public class BaseClass {
 		System.setProperty("webdriver.chrome.driver", file.getCanonicalPath()+"\\BrowserDrivers\\chromedriver.exe");
 
 		driver = new ChromeDriver();
-
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-
-		driver.manage().window().maximize();
 		
 		return driver;
 

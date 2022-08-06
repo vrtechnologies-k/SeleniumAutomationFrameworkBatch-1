@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import pageObjects.HomePage;
 import pageObjects.ProductsPage;
 import utilities.BaseClass;
@@ -29,6 +28,7 @@ public class businesslibraries extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		ProductsPage product = PageFactory.initElements(driver, ProductsPage.class); 
+		commmonFunctions functions = PageFactory.initElements(driver, commmonFunctions.c);
 
 		product.searchItem();
 
@@ -133,7 +133,7 @@ public class businesslibraries extends BaseClass{
 
 	}
 
-	public void submitForm() throws Exception {
+	public void submitForm(String Name, String Email, String Password, String Gender, String DOB) throws Exception {
 
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 
@@ -141,7 +141,8 @@ public class businesslibraries extends BaseClass{
 
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 
-		homePage.nameEditBox.sendKeys("Venkat");
+		homePage.nameEditBox.sendKeys(Name);
+		type
 
 		Thread.sleep(2000);
 
@@ -149,9 +150,9 @@ public class businesslibraries extends BaseClass{
 
 		System.out.println(nameattribute);
 
-		homePage.emailEditBox.sendKeys("venkat@gmail.com");
+		homePage.emailEditBox.sendKeys(Email);
 
-		homePage.pwdEditBox.sendKeys("venkat");
+		homePage.pwdEditBox.sendKeys(Password);
 
 		homePage.checkbox.click();
 
@@ -161,7 +162,7 @@ public class businesslibraries extends BaseClass{
 			System.out.println("CheckBox is not selected");
 		}
 
-		new Select(homePage.select).selectByVisibleText("Female");
+		new Select(homePage.select).selectByVisibleText(Gender);
 
 		Thread.sleep(5000);
 
@@ -194,7 +195,7 @@ public class businesslibraries extends BaseClass{
 			System.out.println("Employee Radio Button is not selected");
 		}
 
-		homePage.DOB.sendKeys("01-08-1988");
+		homePage.DOB.sendKeys(DOB);
 
 		homePage.submitBtn.click();
 
@@ -206,6 +207,7 @@ public class businesslibraries extends BaseClass{
 
 			System.out.println("Expected and actual texts are matched");
 		}
+		
 
 	}
 

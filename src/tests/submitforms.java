@@ -6,6 +6,7 @@ import libraries.businesslibraries;
 import utilities.BaseClass;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -24,12 +25,12 @@ public class submitforms extends BaseClass{
 		driver = invokeBrowser();
 	}
 
-	@Test
-	public void testsubmitform() throws Exception {
+	@Test(dataProvider = "formDetails")
+	public void testsubmitform(String Name, String Email, String Password, String Gender, String DOB) throws Exception {
 
 		businesslibraries libraries = PageFactory.initElements(driver, businesslibraries.class);
 		
-		libraries.submitForm();
+		libraries.submitForm(Name, Email, Password, Gender, DOB);
 
 	}
 
@@ -38,6 +39,13 @@ public class submitforms extends BaseClass{
 
 		driver.quit();
 
+	}
+	
+	@DataProvider(name = "formDetails")
+	public Object[][] formDetails() {
+		
+		return new Object[][] {{"Ramya", "Ramya@gmail.com","Ramya@123","Female","01-01-1988" }, {"Venkat", "Venkat@gmail.com","Venkat@123","Male","01-08-1988" }};
+		
 	}
 
 }

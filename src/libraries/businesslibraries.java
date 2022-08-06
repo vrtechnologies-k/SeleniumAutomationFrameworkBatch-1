@@ -22,8 +22,6 @@ public class businesslibraries extends BaseClass{
 
 	public void placeOrder() throws Exception {
 
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
 		driver.manage().window().maximize();

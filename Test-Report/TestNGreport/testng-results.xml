@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Enter the Name into the Name Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Eamil into the Email Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Password into the Password Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Select the gender from the Dropdown is :Female]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Date of Birth]]>
+    </line>
+    <line>
+      <![CDATA[click on submit button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Name into the Name Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Eamil into the Email Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Password into the Password Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Select the gender from the Dropdown is :Male]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Date of Birth]]>
+    </line>
+    <line>
+      <![CDATA[click on submit button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60198" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:38:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60198" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:38:39Z">
+      <class name="tests.submitforms">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.submitforms@19dc67c2]" name="setUp" is-config="true" duration-ms="2943" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@19dc67c2]" name="testsubmitform" duration-ms="19538" started-at="2022-08-08T05:37:42Z" data-provider="formDetails" finished-at="2022-08-08T05:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ramya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ramya@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ramya@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01-01-1988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Enter the Name into the Name Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Eamil into the Email Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Password into the Password Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Select the gender from the Dropdown is :Female]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Date of Birth]]>
+            </line>
+            <line>
+              <![CDATA[click on submit button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@19dc67c2]" name="testsubmitform" duration-ms="18289" started-at="2022-08-08T05:38:01Z" data-provider="formDetails" finished-at="2022-08-08T05:38:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Venkat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Venkat@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Venkat@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01-08-1988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Enter the Name into the Name Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Eamil into the Email Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Password into the Password Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Select the gender from the Dropdown is :Male]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Date of Birth]]>
+            </line>
+            <line>
+              <![CDATA[click on submit button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.submitforms@19dc67c2]" name="tearDown" is-config="true" duration-ms="897" started-at="2022-08-08T05:38:20Z" finished-at="2022-08-08T05:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.submitforms -->
+      <class name="tests.PlaceOrderTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="setup" is-config="true" duration-ms="1573" started-at="2022-08-08T05:38:21Z" finished-at="2022-08-08T05:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="placeOrderTest()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="placeOrderTest" duration-ms="16108" started-at="2022-08-08T05:38:22Z" finished-at="2022-08-08T05:38:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="tearDown" is-config="true" duration-ms="829" started-at="2022-08-08T05:38:38Z" finished-at="2022-08-08T05:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PlaceOrderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

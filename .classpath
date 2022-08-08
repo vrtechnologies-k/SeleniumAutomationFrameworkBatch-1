@@ -10,5 +10,8 @@
 	<classpathentry kind="lib" path="./Lib/poi-ooxml-schemas-3.9.jar"/>
 	<classpathentry kind="lib" path="./Lib/selenium-server-4.3.0.jar"/>
 	<classpathentry kind="lib" path="./Lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="./Lib/testng-6.14.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
+
+

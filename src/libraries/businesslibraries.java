@@ -1,12 +1,18 @@
 package libraries;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.ArrayList;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
+
 import pageObjects.HomePage;
 import pageObjects.ProductsPage;
 import utilities.BaseClass;
@@ -28,7 +34,6 @@ public class businesslibraries extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		ProductsPage product = PageFactory.initElements(driver, ProductsPage.class); 
-		commmonFunctions functions = PageFactory.initElements(driver, commmonFunctions.c);
 
 		product.searchItem();
 
@@ -142,19 +147,26 @@ public class businesslibraries extends BaseClass{
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 
 		homePage.nameEditBox.sendKeys(Name);
-		type
 
 		Thread.sleep(2000);
 
+		Reporter.log("Enter the Name into the Name Editbox");
+		
 		String nameattribute = homePage.nameEditBox.getAttribute("value");
 
 		System.out.println(nameattribute);
 
 		homePage.emailEditBox.sendKeys(Email);
+		
+		Reporter.log("Enter the Eamil into the Email Editbox");
 
 		homePage.pwdEditBox.sendKeys(Password);
+		
+		Reporter.log("Enter the Password into the Password Editbox");
 
 		homePage.checkbox.click();
+		
+		Reporter.log("Click on the Checkbox");
 
 		if (homePage.checkbox.isSelected()) {
 			System.out.println("CheckBox is selected");
@@ -165,6 +177,8 @@ public class businesslibraries extends BaseClass{
 		new Select(homePage.select).selectByVisibleText(Gender);
 
 		Thread.sleep(5000);
+		
+		Reporter.log("Select the gender from the Dropdown is :"+Gender);
 
 		int ddcount = homePage.options.size();
 
@@ -188,6 +202,8 @@ public class businesslibraries extends BaseClass{
 		homePage.radio1.click();
 
 		Thread.sleep(5000);
+		
+		Reporter.log("Click on the Radio button");
 
 		if (homePage.radiobuttons.get(1).isSelected()) {
 			System.out.println("Employye Radio Button is selected");
@@ -196,17 +212,31 @@ public class businesslibraries extends BaseClass{
 		}
 
 		homePage.DOB.sendKeys(DOB);
+		
+		Reporter.log("Enter the Date of Birth");
 
 		homePage.submitBtn.click();
+		
+		Reporter.log("click on submit button");
 
 		String sucmsg = homePage.alertmessage.getText();
 
 		System.out.println(sucmsg);
+		
+		Reporter.log("Alert Message is: "+sucmsg);
 
 		if (sucmsg.contains("The Form has been submitted successfully")) {
 
 			System.out.println("Expected and actual texts are matched");
 		}
+		
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		File destinationFile = new File("Screenshots/screenshot.png");
+		
+		FileUtils.copyFile(file, destinationFile);
+		
+		Reporter.log("<a target=\"_blank\" href=\"D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-1\\Screenshots\\screenshot.png\">screenshot</a>");
 		
 
 	}

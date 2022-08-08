@@ -16,8 +16,7 @@ public class ExcelUtils {
 	}
 	
 	
-	@SuppressWarnings("null")
-	public static String readExcelData() throws Exception {
+	public static Object[][] readExcelData() throws Exception {
 		
 		String getData = null;
 		
@@ -33,7 +32,7 @@ public class ExcelUtils {
 		
 		int cols = sheet.getColumns();
 		
-		String[][] tableArray = null;
+		String[][] tableArray = new String[rows][cols];
 		
 		int ci, cj;
 		
@@ -45,9 +44,9 @@ public class ExcelUtils {
 				
 				getData = sheet.getCell(j, i).getContents();
 				
-				//System.out.println(getData);
+				System.out.println(getData);
 				
-				//tableArray[cj][ci].
+				tableArray[ci][cj] = getData;
 				
 			}
 			
@@ -56,7 +55,7 @@ public class ExcelUtils {
 		
 		
 		
-		return getData;
+		return (tableArray);
 		
 		
 		

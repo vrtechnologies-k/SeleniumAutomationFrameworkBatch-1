@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
   <reporter-output>
     <line>
       <![CDATA[Enter the Name into the Name Editbox]]>
@@ -14,7 +14,69 @@
       <![CDATA[Click on the Checkbox]]>
     </line>
     <line>
-      <![CDATA[Select the gender from the Dropdown is :Female]]>
+      <![CDATA[Select the gender from the Dropdown is :Male]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Date of Birth]]>
+    </line>
+    <line>
+      <![CDATA[click on submit button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Name into the Name Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Eamil into the Email Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Password into the Password Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Select the gender from the Dropdown is :Male]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Date of Birth]]>
+    </line>
+    <line>
+      <![CDATA[click on submit button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Name into the Name Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Eamil into the Email Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Enter the Password into the Password Editbox]]>
+    </line>
+    <line>
+      <![CDATA[Click on the Checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Select the gender from the Dropdown is :Male]]>
     </line>
     <line>
       <![CDATA[Click on the Radio button]]>
@@ -64,78 +126,16 @@ Success! The Form has been submitted successfully!.]]>
       <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="60198" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:38:39Z">
+  <suite name="Suite" duration-ms="101919" started-at="2022-08-10T05:44:55Z" finished-at="2022-08-10T05:46:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="60198" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:38:39Z">
-      <class name="tests.submitforms">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.submitforms@19dc67c2]" name="setUp" is-config="true" duration-ms="2943" started-at="2022-08-08T05:37:39Z" finished-at="2022-08-08T05:37:42Z">
+    <test name="Test" duration-ms="101919" started-at="2022-08-10T05:44:55Z" finished-at="2022-08-10T05:46:37Z">
+      <class name="tests.Registartion">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.Registartion@23a5fd2]" name="setUp" is-config="true" duration-ms="1285" started-at="2022-08-10T05:45:57Z" finished-at="2022-08-10T05:45:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@19dc67c2]" name="testsubmitform" duration-ms="19538" started-at="2022-08-08T05:37:42Z" data-provider="formDetails" finished-at="2022-08-08T05:38:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ramya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ramya@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Ramya@123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[01-01-1988]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Enter the Name into the Name Editbox]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Eamil into the Email Editbox]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Password into the Password Editbox]]>
-            </line>
-            <line>
-              <![CDATA[Click on the Checkbox]]>
-            </line>
-            <line>
-              <![CDATA[Select the gender from the Dropdown is :Female]]>
-            </line>
-            <line>
-              <![CDATA[Click on the Radio button]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Date of Birth]]>
-            </line>
-            <line>
-              <![CDATA[click on submit button]]>
-            </line>
-            <line>
-              <![CDATA[Alert Message is: ×
-Success! The Form has been submitted successfully!.]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testsubmitform -->
-        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@19dc67c2]" name="testsubmitform" duration-ms="18289" started-at="2022-08-08T05:38:01Z" data-provider="formDetails" finished-at="2022-08-08T05:38:20Z">
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Registartion@23a5fd2]" name="testsubmitform" duration-ms="19241" started-at="2022-08-10T05:45:59Z" data-provider="formDetails" finished-at="2022-08-10T05:46:18Z">
           <params>
             <param index="0">
               <value>
@@ -144,12 +144,12 @@ Success! The Form has been submitted successfully!.]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Venkat@gmail.com]]>
+                <![CDATA[venkat@gmail.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Venkat@123]]>
+                <![CDATA[Venkat]]>
               </value>
             </param>
             <param index="3">
@@ -159,7 +159,7 @@ Success! The Form has been submitted successfully!.]]>
             </param>
             <param index="4">
               <value>
-                <![CDATA[01-08-1988]]>
+                <![CDATA[01/08/1988]]>
               </value>
             </param>
           </params>
@@ -197,21 +197,342 @@ Success! The Form has been submitted successfully!.]]>
             </line>
           </reporter-output>
         </test-method> <!-- testsubmitform -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.submitforms@19dc67c2]" name="tearDown" is-config="true" duration-ms="897" started-at="2022-08-08T05:38:20Z" finished-at="2022-08-08T05:38:21Z">
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Registartion@23a5fd2]" name="testsubmitform" duration-ms="18066" started-at="2022-08-10T05:46:18Z" data-provider="formDetails" finished-at="2022-08-10T05:46:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Karthik@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01/11/1987]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Enter the Name into the Name Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Eamil into the Email Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Password into the Password Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Select the gender from the Dropdown is :Male]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Date of Birth]]>
+            </line>
+            <line>
+              <![CDATA[click on submit button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="FAIL" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Registartion@23a5fd2]" name="testsubmitform" duration-ms="167" started-at="2022-08-10T05:46:36Z" data-provider="formDetails" finished-at="2022-08-10T05:46:36Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at libraries.businesslibraries.submitForm(Unknown Source)
+at tests.Registartion.testsubmitform(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Registartion@23a5fd2]" name="tearDown" is-config="true" duration-ms="768" started-at="2022-08-10T05:46:36Z" finished-at="2022-08-10T05:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Registartion -->
+      <class name="tests.submitforms">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.submitforms@221af3c0]" name="setUp" is-config="true" duration-ms="4241" started-at="2022-08-10T05:44:55Z" finished-at="2022-08-10T05:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@221af3c0]" name="testsubmitform" duration-ms="20305" started-at="2022-08-10T05:45:00Z" data-provider="formDetails" finished-at="2022-08-10T05:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Venkat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[venkat@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Venkat]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01/08/1988]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Enter the Name into the Name Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Eamil into the Email Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Password into the Password Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Select the gender from the Dropdown is :Male]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Date of Birth]]>
+            </line>
+            <line>
+              <![CDATA[click on submit button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="PASS" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@221af3c0]" name="testsubmitform" duration-ms="17988" started-at="2022-08-10T05:45:20Z" data-provider="formDetails" finished-at="2022-08-10T05:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Karthik@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01/11/1987]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Enter the Name into the Name Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Eamil into the Email Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Password into the Password Editbox]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Select the gender from the Dropdown is :Male]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Enter the Date of Birth]]>
+            </line>
+            <line>
+              <![CDATA[click on submit button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Message is: ×
+Success! The Form has been submitted successfully!.]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-1\Screenshots\screenshot.png">screenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="FAIL" signature="testsubmitform(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitforms@221af3c0]" name="testsubmitform" duration-ms="148" started-at="2022-08-10T05:45:38Z" data-provider="formDetails" finished-at="2022-08-10T05:45:38Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at libraries.businesslibraries.submitForm(Unknown Source)
+at tests.submitforms.testsubmitform(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmitform -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.submitforms@221af3c0]" name="tearDown" is-config="true" duration-ms="807" started-at="2022-08-10T05:45:38Z" finished-at="2022-08-10T05:45:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.submitforms -->
       <class name="tests.PlaceOrderTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="setup" is-config="true" duration-ms="1573" started-at="2022-08-08T05:38:21Z" finished-at="2022-08-08T05:38:22Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PlaceOrderTest@62bd765]" name="setup" is-config="true" duration-ms="2008" started-at="2022-08-10T05:45:39Z" finished-at="2022-08-10T05:45:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="placeOrderTest()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="placeOrderTest" duration-ms="16108" started-at="2022-08-08T05:38:22Z" finished-at="2022-08-08T05:38:38Z">
+        <test-method status="PASS" signature="placeOrderTest()[pri:0, instance:tests.PlaceOrderTest@62bd765]" name="placeOrderTest" duration-ms="15777" started-at="2022-08-10T05:45:41Z" finished-at="2022-08-10T05:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrderTest@221af3c0]" name="tearDown" is-config="true" duration-ms="829" started-at="2022-08-08T05:38:38Z" finished-at="2022-08-08T05:38:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrderTest@62bd765]" name="tearDown" is-config="true" duration-ms="762" started-at="2022-08-10T05:45:57Z" finished-at="2022-08-10T05:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

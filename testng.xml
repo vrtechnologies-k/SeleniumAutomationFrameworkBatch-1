@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.submitforms"/>
       <class name="tests.PlaceOrderTest"/>
+      <class name="tests.Registartion"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

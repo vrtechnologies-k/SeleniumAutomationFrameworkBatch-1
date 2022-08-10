@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.Registartion">
+        <methods>
+          <include name="testsubmitform" invocation-numbers="2"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.Registartion -->
+      <class name="tests.submitforms">
+        <methods>
+          <include name="setUp"/>
+          <include name="testsubmitform" invocation-numbers="2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.submitforms -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -238,7 +238,6 @@ public class businesslibraries extends BaseClass{
 		
 		Reporter.log("<a target=\"_blank\" href=\"D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-1\\Screenshots\\screenshot.png\">screenshot</a>");
 		
-
 	}
 
 }

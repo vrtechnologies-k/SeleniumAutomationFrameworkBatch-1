@@ -27,9 +27,9 @@ public class businesslibraries extends BaseClass{
 
 	public void placeOrder() throws Exception {
 
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		//driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -140,9 +140,9 @@ public class businesslibraries extends BaseClass{
 
 	public void submitForm(String Name, String Email, String Password, String Gender, String DOB) throws Exception {
 
-		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		//driver.get("https://rahulshettyacademy.com/angularpractice/");
 
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 

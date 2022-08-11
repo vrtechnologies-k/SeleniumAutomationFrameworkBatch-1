@@ -8,6 +8,8 @@ import utilities.ExcelUtilities;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,9 +27,11 @@ public class Registartion extends BaseClass{
 	}
 
 	@BeforeClass
-	public void setUp() throws Exception {
+	@Parameters({ "env", "Browser" })
+	public void setUp(@Optional("DEV") String env, @Optional("Firefox") String Browser) throws Exception {
 
-		driver = invokeBrowser();
+		driver = invokeBrowser(env,Browser);
+		Open(URL);
 	}
 
 	@Test(dataProvider = "formDetails")

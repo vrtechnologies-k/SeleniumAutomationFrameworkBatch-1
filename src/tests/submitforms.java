@@ -5,13 +5,11 @@ import org.testng.annotations.Test;
 import libraries.businesslibraries;
 import utilities.BaseClass;
 import utilities.ExcelUtilities;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import java.io.File;
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -25,9 +23,11 @@ public class submitforms extends BaseClass{
 	}
 
 	@BeforeClass
-	public void setUp() throws Exception {
+	@Parameters({ "env", "Browser" })
+	public void setUp(@Optional("DEV") String env, @Optional("Firefox") String Browser) throws Exception {
 
-		driver = invokeBrowser();
+		driver = invokeBrowser(env,Browser);
+		Open(URL);
 	}
 
 	@Test(dataProvider = "formDetails")

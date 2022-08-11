@@ -41,6 +41,8 @@
 		<mkdir dir="${testng-report-dir}" />
 		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
 			<xmlfileset dir="${basedir}" includes="testng.xml" />
+			<arg line="${arg0}" />
+			<arg line="${arg1}" />
 		</testng>
 	</target>
 </project>

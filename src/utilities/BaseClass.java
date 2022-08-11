@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,10 +21,20 @@ public class BaseClass {
 		File file = new File(".\\");
 
 		System.out.println(file.getCanonicalPath());
+		
+		String Browser = "Chrome";
+		
+		if (Browser.equals("Chrome")) {
 
 		System.setProperty("webdriver.chrome.driver", file.getCanonicalPath()+"\\BrowserDrivers\\chromedriver.exe");
 
-		driver = new ChromeDriver();
+		  driver = new ChromeDriver();
+		} else {
+			
+			System.setProperty("webdriver.gecko.driver", file.getCanonicalPath()+"\\BrowserDrivers\\geckodriver.exe");
+
+			driver = new FirefoxDriver();
+		}
 		
 		return driver;
 

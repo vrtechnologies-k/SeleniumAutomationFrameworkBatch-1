@@ -24,7 +24,7 @@ public class submitforms extends BaseClass{
 
 	@BeforeClass
 	@Parameters({ "env", "Browser" })
-	public void setUp(@Optional("DEV") String env, @Optional("Firefox") String Browser) throws Exception {
+	public void setUp(@Optional("DEV") String env, @Optional("Chrome") String Browser) throws Exception {
 
 		driver = invokeBrowser(env,Browser);
 		Open(URL);

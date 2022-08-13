@@ -41,6 +41,8 @@
 		<mkdir dir="${testng-report-dir}" />
 		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
 			<xmlfileset dir="${basedir}" includes="testng.xml" />
+			<echo message="first Param: ${env}"/>
+			<echo message="second Param: ${Browser}"/>
 		</testng>
 	</target>
 </project>

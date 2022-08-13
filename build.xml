@@ -1,7 +1,7 @@
 <project name="Build tool for TestNG Automation" basedir=".">
 	<!-- ========== Initialize Properties =================================== -->
 	<!-- set global properties for build -->
-	<property environment="Browser"/>
+	<property Browser="Browser"/>
 	<property environment="env"/>
 	<property name="basedir" value="." />
 	<property name="Lib" value="${basedir}/Lib" />

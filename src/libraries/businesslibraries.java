@@ -27,7 +27,7 @@ public class businesslibraries extends BaseClass{
 
 	public void placeOrder() throws Exception {
 
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		//driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
 		//driver.manage().window().maximize();
 
